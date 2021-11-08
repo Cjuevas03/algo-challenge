@@ -5,7 +5,14 @@
 */
 
 function chunkArray(array, size) {
-    // Code goes here
+    let result = []
+
+    for (i = 0; i < array.length; i += size) {
+        let chunk = array.slice(i, i + size)
+        result.push(chunk)
+    }
+
+    return result
 }
 
 

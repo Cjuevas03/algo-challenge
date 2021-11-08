@@ -8,7 +8,8 @@
 
 
 function fizzBuzz(n) {
-    // Code goes here
+    for (let i = 0; i < n;)
+        console.log((++i % 3 ? '' : 'fizz') + (i % 5 ? '' : 'buzz') || i)
 }
 
 
